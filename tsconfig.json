@@ -1,6 +1,10 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "baseUrl": "./", // Set the base URL for module resolution
+    "paths": {
+      "*": ["*", "assets/*"] // Add a path mapping for the assets folder
+    }
   }
 }
